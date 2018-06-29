@@ -6,9 +6,11 @@ public interface Cell {
 
     void setAlive(boolean isAlive);
 
-    int getNumberOfNeighborsAlive();
+    int getNeighborsAliveCount();
 
-    void onNeighborStateChange(boolean isAlive, boolean isNextTick);
+    void onNeighborStateChange(boolean isAlive);
+
+    void onNeighborStateChangeNextTick(boolean isAlive);
 
     void onNextTick();
 }
