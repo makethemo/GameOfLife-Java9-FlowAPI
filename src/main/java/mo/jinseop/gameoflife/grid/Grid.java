@@ -7,8 +7,11 @@ public interface Grid<C extends Cell, I extends Index> {
 
     C getCell(I index);
 
+    boolean setCell(C cell, I index);
+
     I getIndex(C cell);
 
     I getSize();
-}
 
+    void clear();
+}
